@@ -1,0 +1,613 @@
+No.,Name,Year,Wealth,Age,Gender,Nationality,Industry
+1,Carlos Slim Helu,2010,53.5,70,M,Mexico,Telecom
+2,Bill Gates,2010,53,54,M,United States of America,Technology
+3,Warren Buffett,2010,47,79,M,United States of America,Finance
+4,Mukesh Ambani,2010,29,52,M,India,Energy
+5,Lakshmi Mittal,2010,28.7,59,M,India,Mining
+6,Larry Ellison,2010,28,65,M,United States of America,Technology
+7,Bernard Arnault,2010,27.5,61,M,France,Fashion & Retail
+8,Eike Batista,2010,27,53,M,Brazil,Mining
+9,Amancio Ortega,2010,25,74,M,Spain,Fashion & Retail
+10,Karl Albrecht,2010,23.5,90,M,Germany,Fashion & Retail
+11,Ingvar Kamprad,2010,23,83,M,Sweden,Fashion & Retail
+12,Christy Walton,2010,22.5,55,F,United States of America,Fashion & Retail
+13,Stefan Persson,2010,22.4,62,M,Sweden,Fashion & Retail
+14,Li Ka-shing,2010,21,81,M,Hong Kong,Diversified
+15,Jim Walton,2010,20.7,62,M,United States of America,Fashion & Retail
+16,Alice Walton,2010,20.6,60,F,United States of America,Fashion & Retail
+17,Liliane Bettencourt,2010,20,87,F,France,Fashion & Retail
+18,S. Robson Walton,2010,19.8,66,M,United States of America,Fashion & Retail
+19,Prince Alwaleed Bin Talal Alsaud,2010,19.4,55,M,Saudi Arabia,Finance
+20,David Thomson,2010,19,52,M,Canada,Media & Entertainment
+21,Michael Otto,2010,18.7,66,M,Germany,Fashion & Retail
+22,Lee Shau Kee,2010,18.5,82,M,Hong Kong,Real Estate
+23,Michael Bloomberg,2010,18,68,M,United States of America,Media & Entertainment
+24,Sergey Brin,2010,17.5,36,M,United States of America,Technology
+24,Charles Koch,2010,17.5,74,M,United States of America,Diversified
+24,David Koch,2010,17.5,69,M,United States of America,Diversified
+24,Larry Page,2010,17.5,37,M,United States of America,Technology
+28,Michele Ferrero,2010,17,83,M,Italy,Food & Beverage
+28,Thomas & Raymond Kwok,2010,17,,M,Hong Kong,Real Estate
+28,Azim Premji,2010,17,64,M,India,Technology
+31,Theo Albrecht,2010,16.7,88,M,Germany,Fashion & Retail
+32,Vladimir Lisin,2010,15.8,53,M,Russia,Mining
+33,Steve Ballmer,2010,14.5,54,M,United States of America,Technology
+33,Robert Kuok,2010,14.5,86,M,Malaysia,Diversified
+35,George Soros,2010,14,79,M,United States of America,Finance
+36,Anil Ambani,2010,13.7,50,M,India,Energy
+37,Paul Allen,2010,13.5,57,M,United States of America,Technology
+37,Michael Dell,2010,13.5,45,M,United States of America,Technology
+39,Mikhail Prokhorov,2010,13.4,44,M,Russia,Finance
+40,Birgit Rausing,2010,13,86,F,Sweden,Food & Beverage
+40,Shashi & Ravi Ruia,2010,13,66,M,India,Diversified
+42,Mikhail Fridman,2010,12.7,45,M,Russia,Energy
+43,Jeff Bezos,2010,12.3,46,M,United States of America,Technology
+44,Savitri Jindal,2010,12.2,60,M,India,Mining
+45,Donald Bren,2010,12,77,M,United States of America,Real Estate
+45,Gerald Cavendish Grosvenor,2010,12,58,M,United Kingdom,Real Estate
+45,John Paulson,2010,12,54,M,United States of America,Finance
+48,Abigail Johnson,2010,11.5,48,F,United States of America,Finance
+48,Jorge Paulo Lemann,2010,11.5,70,M,Brazil,Food & Beverage
+50,Roman Abramovich,2010,11.2,43,M,Russia,Diversified
+51,Susanne Klatten,2010,11.1,47,F,Germany,Automotive
+52,Iris Fontbona,2010,11,67,F,Chile,Mining
+52,"Forrest Mars, Jr.",2010,11,78,M,United States of America,Food & Beverage
+52,Jacqueline Mars,2010,11,70,F,United States of America,Food & Beverage
+52,John Mars,2010,11,73,M,United States of America,Food & Beverage
+52,Ronald Perelman,2010,11,67,M,United States of America,Finance
+57,Oleg Deripaska,2010,10.7,42,M,Russia,Mining
+58,Vagit Alekperov,2010,10.6,59,M,Russia,Energy
+59,Leonardo Del Vecchio,2010,10.5,74,M,Italy,Fashion & Retail
+59,Carl Icahn,2010,10.5,74,M,United States of America,Finance
+61,Vladimir Potanin,2010,10.3,49,M,Russia,Mining
+62,Phil Knight,2010,10.2,72,M,United States of America,Fashion & Retail
+63,Ricardo Salinas Pliego,2010,10.1,54,M,Mexico,Fashion & Retail
+64,Mohammed Al Amoudi,2010,10,65,M,Saudi Arabia,Energy
+64,Ernesto Bertarelli,2010,10,44,M,Switzerland,Healthcare
+64,Anne Cox Chambers,2010,10,90,F,United States of America,Media & Entertainment
+64,George Kaiser,2010,10,67,M,United States of America,Energy
+64,Hans Rausing,2010,10,84,M,Sweden,Food & Beverage
+64,Joseph Safra,2010,10,71,M,Brazil,Finance
+70,Alexey Mordashov,2010,9.9,44,M,Russia,Mining
+71,Viktor Rashnikov,2010,9.8,61,M,Russia,Mining
+72,German Larrea Mota Velasco,2010,9.7,56,M,Mexico,Mining
+73,Sheldon Adelson,2010,9.3,76,M,United States of America,Gambling & Casinos
+74,Silvio Berlusconi,2010,9,73,M,Italy,Diversified
+74,Dan Duncan,2010,9,77,M,United States of America,Energy
+74,Kushal Pal Singh,2010,9,78,M,India,Real Estate
+77,Nasser Al-Kharafi,2010,8.7,66,M,Kuwait,Real Estate
+77,Francois Pinault,2010,8.7,73,M,France,Fashion & Retail
+79,Dmitry Rybolovlev,2010,8.6,43,M,Russia,Manufacturing
+80,Iskander Makhmudov,2010,8.5,46,M,Russia,Mining
+80,James Simons,2010,8.5,71,M,United States of America,Finance
+82,Alberto Bailleres Gonzalez,2010,8.3,77,M,Mexico,Mining
+83,German Khan,2010,8.2,48,M,Russia,Energy
+84,"Eliodoro, Bernardo & Patricia Matte",2010,8.1,64,,Chile,Manufacturing
+85,Edward Johnson III,2010,8,79,M,United States of America,Finance
+86,Kumar Birla,2010,7.9,42,M,India,Diversified
+87,Sunil Mittal,2010,7.8,52,M,India,Telecom
+88,John Fredriksen,2010,7.7,65,M,Cyprus,Logistics
+89,Serge Dassault,2010,7.6,84,M,France,Diversified
+89,Petr Kellner,2010,7.6,45,M,Czech Republic,Finance
+89,Ananda Krishnan,2010,7.6,71,M,Malaysia,Telecom
+89,Tadashi Yanai,2010,7.6,61,M,Japan,Fashion & Retail
+93,Mohamed Bin Issa Al Jaber,2010,7.5,51,M,Saudi Arabia,Real Estate
+93,Len Blavatnik,2010,7.5,52,M,United States of America,Diversified
+93,David & Simon Reuben,2010,7.5,67,M,United Kingdom,Real Estate
+93,Nobutada Saji,2010,7.5,64,M,Japan,Food & Beverage
+93,Alain & Gerard Wertheimer,2010,7.5,,M,France,Fashion & Retail
+93,Vladimir Yevtushenkov,2010,7.5,61,M,Russia,Telecom
+99,August von Finck,2010,7.3,80,M,Germany,Finance
+100,Lee Kun-Hee,2010,7.2,68,M,South Korea,Technology
+100,Alisher Usmanov,2010,7.2,56,M,Russia,Mining
+100,Galen Weston,2010,7.2,69,M,Canada,Fashion & Retail
+1,Carlos Slim Helu,2011,74,71,M,Mexico,Telecom
+2,Bill Gates,2011,56,55,M,United States of America,Technology
+3,Warren Buffett,2011,50,88,M,United States of America,Finance
+4,Bernard Arnault,2011,41,62,M,France,Fashion & Retail
+5,Larry Ellison,2011,39.5,66,M,United States of America,Technology
+6,Lakshmi Mittal,2011,31.1,60,M,India,Mining
+7,Amancio Ortega,2011,31,74,M,Spain,Fashion & Retail
+8,Eike Batista,2011,30,54,M,Brazil,Mining
+9,Mukesh Ambani,2011,27,53,M,India,Energy
+10,Christy Walton,2011,26.5,56,F,United States of America,Fashion & Retail
+11,Li Ka-shing,2011,26,82,M,Hong Kong,Diversified
+12,Karl Albrecht,2011,25.5,91,M,Germany,Fashion & Retail
+13,Stefan Persson,2011,24.5,63,M,Sweden,Fashion & Retail
+14,Vladimir Lisin,2011,24,54,M,Russia,Mining
+15,Liliane Bettencourt,2011,23.5,88,F,France,Fashion & Retail
+16,Sheldon Adelson,2011,23.3,77,M,United States of America,Gambling & Casinos
+17,David Thomson,2011,23,53,M,Canada,Media & Entertainment
+18,Charles Koch,2011,22,75,M,United States of America,Diversified
+18,David Koch,2011,22,70,M,United States of America,Diversified
+20,Jim Walton,2011,21.3,63,M,United States of America,Fashion & Retail
+21,Alice Walton,2011,21.2,61,F,United States of America,Fashion & Retail
+22,S. Robson Walton,2011,21,67,M,United States of America,Fashion & Retail
+23,Thomas & Raymond Kwok,2011,20,,M,Hong Kong,Real Estate
+24,Larry Page,2011,19.8,37,M,United States of America,Technology
+24,Sergey Brin,2011,19.8,37,M,United States of America,Technology
+26,Prince Alwaleed Bin Talal Alsaud,2011,19.6,56,M,Saudi Arabia,Finance
+27,Iris Fontbona,2011,19.2,68,F,Chile,Mining
+28,Lee Shau Kee,2011,19,83,M,Hong Kong,Real Estate
+29,Alexey Mordashov,2011,18.5,45,M,Russia,Mining
+30,Michael Bloomberg,2011,18.1,69,M,United States of America,Media & Entertainment
+30,Jeff Bezos,2011,18.1,47,M,United States of America,Technology
+32,Michele Ferrero,2011,18,84,F,Italy,Food & Beverage
+32,Mikhail Prokhorov,2011,18,45,M,Russia,Finance
+34,Vladimir Potanin,2011,17.8,50,M,Russia,Mining
+35,Alisher Usmanov,2011,17.7,57,M,Russia,Mining
+36,Azim Premji,2011,16.8,65,M,India,Technology
+36,Oleg Deripaska,2011,16.8,43,M,Russia,Mining
+38,Michael Otto,2011,16.6,67,M,Germany,Fashion & Retail
+39,Rinat Akhmetov,2011,16,44,M,Ukraine,Mining
+39,German Larrea Mota Velasco,2011,16,57,M,Mexico,Mining
+39,John Paulson,2011,16,55,M,United States of America,Finance
+42,Shashi & Ravi Ruia,2011,15.8,67,M,India,Diversified
+43,Mikhail Fridman,2011,15.1,46,M,Russia,Energy
+44,Michael Dell,2011,14.6,46,M,United States of America,Technology
+44,Susanne Klatten,2011,14.6,48,F,Germany,Automotive
+46,Steve Ballmer,2011,14.5,54,M,United States of America,Technology
+46,George Soros,2011,14.5,80,M,United States of America,Finance
+48,"Theo Albrecht, Jr.",2011,14.4,,M,Germany,Fashion & Retail
+49,Birgit Rausing,2011,14,87,F,Sweden,Food & Beverage
+50,Vagit Alekperov,2011,13.9,60,M,Russia,Energy
+51,Aliko Dangote,2011,13.8,53,M,Nigeria,Manufacturing
+52,Mark Zuckerberg,2011,13.5,26,M,United States of America,Technology
+53,Anne Cox Chambers,2011,13.4,91,F,United States of America,Media & Entertainment
+53,Roman Abramovich,2011,13.4,44,M,Russia,Diversified
+55,Jorge Paulo Lemann,2011,13.3,71,M,Brazil,Food & Beverage
+56,Savitri Jindal,2011,13.2,60,M,India,Mining
+57,Gerald Cavendish Grosvenor,2011,13,59,M,United Kingdom,Real Estate
+57,Paul Allen,2011,13,58,M,United States of America,Technology
+57,Viktor Vekselberg,2011,13,53,M,Russia,Mining
+60,Phil Knight,2011,12.7,73,M,United States of America,Fashion & Retail
+61,Carl Icahn,2011,12.5,75,M,United States of America,Finance
+61,Robert Kuok,2011,12.5,87,M,Malaysia,Diversified
+63,Mohammed Al Amoudi,2011,12.3,66,M,Saudi Arabia,Energy
+64,Donald Bren,2011,12,78,M,United States of America,Real Estate
+64,Ronald Perelman,2011,12,68,M,United States of America,Finance
+66,Alberto Bailleres Gonzalez,2011,11.9,79,M,Mexico,Mining
+67,Francois Pinault,2011,11.5,74,M,France,Fashion & Retail
+68,Joseph Safra,2011,11.4,72,M,Brazil,Finance
+69,Abigail Johnson,2011,11.3,49,F,United States of America,Finance
+70,Viktor Rashnikov,2011,11.2,62,M,Russia,Mining
+71,Leonardo Del Vecchio,2011,11,75,M,Italy,Fashion & Retail
+72,John Fredriksen,2011,10.7,66,M,Cyprus,Logistics
+72,Stefan Quandt,2011,10.7,44,M,Germany,Automotive
+74,James Simons,2011,10.6,72,M,United States of America,Finance
+75,Luis Carlos Sarmiento,2011,10.5,78,M,Colombia,Finance
+75,Horst Paulmann,2011,10.5,76,M,Chile,Fashion & Retail
+77,Nasser Al-Kharafi,2011,10.4,67,M,Kuwait,Real Estate
+77,"Eliodoro, Bernardo & Patricia Matte",2011,10.4,,,Chile,Manufacturing
+79,Sammy Ofer,2011,10.3,89,M,Israel,Logistics
+80,Len Blavatnik,2011,10.1,53,M,United States of America,Diversified
+81,"Forrest Mars, Jr.",2011,10,79,M,United States of America,Food & Beverage
+81,Klaus-Michael Kuhne,2011,10,73,M,Germany,Logistics
+81,John Mars,2011,10,74,M,United States of America,Food & Beverage
+81,Jacqueline Mars,2011,10,71,F,United States of America,Food & Beverage
+81,Hans Rausing,2011,10,84,M,Sweden,Food & Beverage
+81,Ernesto Bertarelli,2011,10,45,M,Switzerland,Healthcare
+81,Gautam Adani,2011,10,48,M,India,Diversified
+88,Iskander Makhmudov,2011,9.9,47,M,Russia,Mining
+89,Johanna Quandt,2011,9.8,84,F,Germany,Automotive
+89,Georg Schaeffler,2011,9.8,,M,Germany,Manufacturing
+89,George Kaiser,2011,9.8,68,M,United States of America,Energy
+92,German Khan,2011,9.6,49,M,Russia,Energy
+93,Dmitry Rybolovlev,2011,9.5,44,M,Russia,Manufacturing
+93,Ananda Krishnan,2011,9.5,72,M,Malaysia,Telecom
+95,Robin Li,2011,9.4,42,M,China,Technology
+96,Serge Dassault,2011,9.3,85,M,France,Diversified
+97,Kumar Birla,2011,9.2,43,M,India,Diversified
+97,Petr Kellner,2011,9.2,46,M,Czech Republic,Finance
+99,Leonid Mikhelson,2011,9.1,55,M,Russia,Energy
+100,Cheng Yu-tung,2011,9,85,M,Hong Kong,Real Estate
+101,Georgina Rinehart,2011,9,57,F,Australia,Mining
+102,Igor Zyuzin,2011,8.9,50,M,Russia,Mining
+1,Carlos Slim Helu,2012,69,72,M,Mexico,Telecom
+2,Bill Gates,2012,61,56,M,United States of America,Technology
+3,Warren Buffett,2012,44,81,M,United States of America,Finance
+4,Bernard Arnault,2012,41,63,M,France,Fashion & Retail
+3,Amancio Ortega,2012,37.5,75,M,Spain,Fashion & Retail
+6,Larry Ellison,2012,36,67,M,United States of America,Technology
+7,Eike Batista,2012,30,55,M,Brazil,Mining
+8,Stefan Persson,2012,26,64,M,Sweden,Fashion & Retail
+9,Li Ka-shing,2012,25.5,83,M,Hong Kong,Diversified
+10,Karl Albrecht,2012,25.4,92,M,Germany,Fashion & Retail
+11,Christy Walton,2012,25.3,57,F,United States of America,Fashion & Retail
+12,Charles Koch,2012,25,76,M,United States of America,Diversified
+12,David Koch,2012,25,71,M,United States of America,Diversified
+14,Sheldon Adelson,2012,24.9,78,M,United States of America,Gambling & Casinos
+15,Liliane Bettencourt,2012,24,89,F,France,Fashion & Retail
+16,Jim Walton,2012,23.7,64,M,United States of America,Fashion & Retail
+17,Alice Walton,2012,23.3,62,F,United States of America,Fashion & Retail
+18,S. Robson Walton,2012,23.1,68,M,United States of America,Fashion & Retail
+19,Mukesh Ambani,2012,22.3,54,M,India,Energy
+20,Michael Bloomberg,2012,22,70,M,United States of America,Media & Entertainment
+21,Lakshmi Mittal,2012,20.7,61,M,India,Mining
+22,George Soros,2012,20,81,M,United States of America,Finance
+23,Michele Ferrero,2012,19,85,F,Italy,Food & Beverage
+24,Sergey Brin,2012,18.7,38,M,United States of America,Technology
+24,Larry Page,2012,18.7,39,M,United States of America,Technology
+26,Jeff Bezos,2012,18.4,48,M,United States of America,Technology
+27,Thomas & Raymond Kwok,2012,18.3,,M,Hong Kong,Real Estate
+28,Alisher Usmanov,2012,18.1,58,M,Russia,Mining
+29,Prince Alwaleed Bin Talal Alsaud,2012,18,57,M,Saudi Arabia,Finance
+29,Lee Shau Kee,2012,18,84,M,Hong Kong,Diversified
+29,Georgina Rinehart,2012,18,58,F,Australia,Mining
+32,"Theo Albrecht, Jr.",2012,17.8,,M,Germany,Fashion & Retail
+32,Iris Fontbona,2012,17.8,69,F,Chile,Mining
+34,Michael Otto,2012,17.6,68,M,Germany,Fashion & Retail
+35,David Thomson,2012,17.5,54,M,Canada,Media & Entertainment
+35,Mark Zuckerberg,2012,17.5,27,M,United States of America,Technology
+37,Ricardo Salinas Pliego,2012,17.4,56,M,Mexico,Fashion & Retail
+38,Alberto Bailleres Gonzalez,2012,16.5,80,M,Mexico,Mining
+39,Rinat Akhmetov,2012,16,45,M,Ukraine,Mining
+39,Cheng Yu-tung,2012,16,86,M,Hong Kong,Diversified
+41,Michael Dell,2012,15.9,47,M,United States of America,Technology
+41,Vladimir Lisin,2012,15.9,55,M,Russia,Mining
+41,Azim Premji,2012,15.9,66,M,India,Technology
+44,Steve Ballmer,2012,15.7,56,M,United States of America,Technology
+45,Alexey Mordashov,2012,15.3,46,M,Russia,Mining
+46,Vladimir Potanin,2012,14.5,51,M,Russia,Mining
+47,Phil Knight,2012,14.4,74,M,United States of America,Fashion & Retail
+48,Paul Allen,2012,14.2,59,M,United States of America,Technology
+48,German Larrea Mota Velasco,2012,14.2,58,M,Mexico,Mining
+50,Carl Icahn,2012,14,76,M,United States of America,Finance
+50,Birgit Rausing,2012,14,88,F,Sweden,Food & Beverage
+52,"Forrest Mars, Jr.",2012,13.8,80,M,United States of America,Food & Beverage
+52,Jacqueline Mars,2012,13.8,72,F,United States of America,Food & Beverage
+52,John Mars,2012,13.8,75,M,United States of America,Food & Beverage
+52,Joseph Safra,2012,13.8,73,M,Brazil,Finance
+56,Vagit Alekperov,2012,13.5,61,M,Russia,Energy
+57,Mikhail Fridman,2012,13.4,47,M,Russia,Energy
+58,Mikhail Prokhorov,2012,13.2,46,M,Russia,Finance
+59,Susanne Klatten,2012,13,49,F,Germany,Automotive
+59,Francois Pinault,2012,13,75,M,France,Fashion & Retail
+61,Mohammed Al Amoudi,2012,12.5,67,M,Saudi Arabia,Energy
+61,Anne Cox Chambers,2012,12.5,92,F,United States of America,Media & Entertainment
+61,John Paulson,2012,12.5,56,M,United States of America,Finance
+64,Robert Kuok,2012,12.4,88,M,Malaysia,Diversified
+64,Luis Carlos Sarmiento,2012,12.4,79,M,Colombia,Finance
+64,Viktor Vekselberg,2012,12.4,54,M,Russia,Mining
+67,Antonio Ermirio de Moraes,2012,12.2,83,M,Brazil,Diversified
+68,Roman Abramovich,2012,12.1,45,M,Russia,Diversified
+69,Donald Bren,2012,12,79,M,United States of America,Real Estate
+69,Jorge Paulo Lemann,2012,12,72,M,Brazil,Food & Beverage
+69,Ronald Perelman,2012,12,69,M,United States of America,Finance
+72,Len Blavatnik,2012,11.9,54,M,United States of America,Diversified
+72,Leonid Mikhelson,2012,11.9,56,M,Russia,Energy
+74,Leonardo Del Vecchio,2012,11.5,76,M,Italy,Fashion & Retail
+75,John Fredriksen,2012,11.3,67,M,Cyprus,Logistics
+76,Aliko Dangote,2012,11.2,54,M,Nigeria,Manufacturing
+76,Stefan Quandt,2012,11.2,45,M,Germany,Automotive
+78,Gerald Cavendish Grosvenor,2012,11,60,M,United Kingdom,Real Estate
+78,Harold Hamm,2012,11,66,M,United States of America,Energy
+80,Savitri Jindal,2012,10.9,62,M,India,Mining
+81,Andrey Melnichenko,2012,10.8,40,M,Russia,Energy
+82,James Simons,2012,10.7,73,M,United States of America,Finance
+83,Ernesto Bertarelli,2012,10.6,46,M,Switzerland,Healthcare
+84,Jack Taylor,2012,10.4,89,M,United States of America,Automotive
+85,Abigail Johnson,2012,10.3,50,F,United States of America,Finance
+86,Robin Li,2012,10.2,43,M,China,Technology
+86,"Eliodoro, Bernardo & Patricia Matte",2012,10.2,,,Chile,Manufacturing
+88,Ray Dalio,2012,10,62,M,United States of America,Finance
+88,George Kaiser,2012,10,69,M,United States of America,Energy
+88,Johanna Quandt,2012,10,85,F,Germany,Automotive
+88,Hans Rausing,2012,10,86,M,Sweden,Food & Beverage
+88,Tadashi Yanai,2012,10,63,M,Japan,Fashion & Retail
+93,Serge Dassault,2012,9.9,86,M,France,Diversified
+93,Ananda Krishnan,2012,9.9,73,M,Malaysia,Telecom
+95,Klaus-Michael Kuhne,2012,9.8,74,M,Germany,Logistics
+96,Pallonji Mistry,2012,9.7,82,M,Ireland,Real Estate
+97,Alejandro Santo Domingo Davila,2012,9.5,35,M,Colombia,Food & Beverage
+98,Horst Paulmann,2012,9.3,77,M,Chile,Fashion & Retail
+99,Gennady Timchenko,2012,9.1,59,M,Russia,Energy
+100,Laurene Powell Jobs,2012,9,48,F,United States of America,Technology
+100,David & Simon Reuben,2012,9,69,M,United Kingdom,Real Estate
+100,Dmitry Rybolovlev,2012,9,45,M,Russia,Manufacturing
+100,Harold Simmons,2012,9,80,M,United States of America,Finance
+1,Carlos Slim Helu,2013,73,73,M,Mexico,Telecom
+2,Bill Gates,2013,67,57,M,United States of America,Technology
+3,Amancio Ortega,2013,57,76,M,Spain,Fashion & Retail
+4,Warren Buffett,2013,53.5,82,M,United States of America,Finance
+5,Larry Ellison,2013,43,68,M,United States of America,Technology
+6,Charles Koch,2013,34,77,M,United States of America,Diversified
+6,David Koch,2013,34,72,M,United States of America,Diversified
+8,Li Ka-shing,2013,31,84,M,Hong Kong,Diversified
+9,Liliane Bettencourt,2013,30,90,F,France,Fashion & Retail
+10,Bernard Arnault,2013,29,64,M,France,Fashion & Retail
+11,Christy Walton,2013,28.2,58,F,United States of America,Fashion & Retail
+12,Stefan Persson,2013,28,65,M,Sweden,Fashion & Retail
+13,Michael Bloomberg,2013,27,71,M,United States of America,Media & Entertainment
+14,Jim Walton,2013,26.7,65,M,United States of America,Fashion & Retail
+15,Sheldon Adelson,2013,26.5,79,M,United States of America,Gambling & Casinos
+16,Alice Walton,2013,26.3,63,F,United States of America,Fashion & Retail
+17,S. Robson Walton,2013,26.1,69,M,United States of America,Fashion & Retail
+18,Karl Albrecht,2013,26,93,M,Germany,Fashion & Retail
+19,Jeff Bezos,2013,25.2,49,M,United States of America,Technology
+20,Larry Page,2013,23,39,M,United States of America,Technology
+21,Sergey Brin,2013,22.8,39,M,United States of America,Technology
+22,Mukesh Ambani,2013,21.5,55,M,India,Energy
+23,Michele Ferrero,2013,20.4,87,F,Italy,Food & Beverage
+24,Lee Shau Kee,2013,20.3,85,M,Hong Kong,Diversified
+24,David Thomson,2013,20.3,55,M,Canada,Media & Entertainment
+26,Prince Alwaleed Bin Talal Alsaud,2013,20,58,M,Saudi Arabia,Finance
+26,Carl Icahn,2013,20,77,M,United States of America,Finance
+26,Thomas & Raymond Kwok,2013,20,,M,Hong Kong,Real Estate
+29,Dieter Schwarz,2013,19.5,73,M,Germany,Fashion & Retail
+30,George Soros,2013,19.2,82,M,United States of America,Finance
+31,"Theo Albrecht, Jr.",2013,18.9,62,M,Germany,Fashion & Retail
+32,Alberto Bailleres Gonzalez,2013,18.2,81,M,Mexico,Mining
+33,Jorge Paulo Lemann,2013,17.8,73,M,Brazil,Food & Beverage
+34,Alisher Usmanov,2013,17.6,59,M,Russia,Mining
+35,Iris Fontbona,2013,17.4,70,F,Chile,Mining
+36,"Forrest Mars, Jr.",2013,17,81,M,United States of America,Food & Beverage
+36,Jacqueline Mars,2013,17,73,F,United States of America,Food & Beverage
+36,John Mars,2013,17,76,M,United States of America,Food & Beverage
+36,Gina Rinehart,2013,17,59,F,Australia,Mining
+40,German Larrea Mota Velasco,2013,16.7,59,M,Mexico,Mining
+41,Mikhail Fridman,2013,16.5,48,M,Russia,Energy
+41,Lakshmi Mittal,2013,16.5,62,M,India,Mining
+43,Aliko Dangote,2013,16.1,55,M,Nigeria,Manufacturing
+44,Len Blavatnik,2013,16,55,M,United States of America,Diversified
+44,Cheng Yu-tung,2013,16,87,M,Hong Kong,Diversified
+46,Joseph Safra,2013,15.9,74,M,Brazil,Finance
+47,Rinat Akhmetov,2013,15.4,46,M,Ukraine,Mining
+47,Leonid Mikhelson,2013,15.4,57,M,Russia,Energy
+49,Leonardo Del Vecchio,2013,15.3,77,M,Italy,Fashion & Retail
+49,Michael Dell,2013,15.3,48,M,United States of America,Technology
+51,Steve Ballmer,2013,15.2,56,M,United States of America,Technology
+52,Viktor Vekselberg,2013,15.1,55,M,Russia,Mining
+53,Paul Allen,2013,15,60,M,United States of America,Technology
+53,Francois Pinault,2013,15,76,M,France,Fashion & Retail
+55,Vagit Alekperov,2013,14.8,62,M,Russia,Energy
+56,Phil Knight,2013,14.4,75,M,United States of America,Fashion & Retail
+56,Andrey Melnichenko,2013,14.4,41,M,Russia,Energy
+58,Dhanin Chearavanont,2013,14.3,73,M,Thailand,Food & Beverage
+58,Susanne Klatten,2013,14.3,50,F,Germany,Automotive
+58,Vladimir Potanin,2013,14.3,52,M,Russia,Mining
+61,Michael Otto,2013,14.2,69,M,Germany,Real Estate
+62,Vladimir Lisin,2013,14.1,56,M,Russia,Mining
+62,Gennady Timchenko,2013,14.1,60,M,Russia,Energy
+64,Luis Carlos Sarmiento,2013,13.9,80,M,Colombia,Finance
+65,Mohammed Al Amoudi,2013,13.5,68,M,Saudi Arabia,Energy
+66,Tadashi Yanai,2013,13.3,64,M,Japan,Fashion & Retail
+66,Mark Zuckerberg,2013,13.3,28,M,United States of America,Technology
+68,Henry Sy,2013,13.2,88,M,Philippines,Diversified
+69,Donald Bren,2013,13,80,M,United States of America,Real Estate
+69,Serge Dassault,2013,13,87,M,France,Diversified
+69,Lee Kun-Hee,2013,13,71,M,South Korea,Technology
+69,Mikhail Prokhorov,2013,13,47,M,Russia,Finance
+73,Alexey Mordashov,2013,12.8,47,M,Russia,Mining
+74,Antonio Ermirio de Moraes,2013,12.7,84,M,Brazil,Diversified
+74,Abigail Johnson,2013,12.7,51,F,United States of America,Finance
+76,Ray Dalio,2013,12.5,63,M,United States of America,Finance
+76,Robert Kuok,2013,12.5,89,M,Malaysia,Diversified
+78,Miuccia Prada,2013,12.4,63,F,Italy,Fashion & Retail
+79,Ronald Perelman,2013,12.2,70,M,United States of America,Finance
+80,Anne Cox Chambers,2013,12,93,F,United States of America,Media & Entertainment
+81,Stefan Quandt,2013,11.9,46,M,Germany,Automotive
+82,Ananda Krishnan,2013,11.7,74,M,Malaysia,Telecom
+82,Alejandro Santo Domingo Davila,2013,11.7,36,M,Colombia,Food & Beverage
+82,James Simons,2013,11.7,74,M,United States of America,Finance
+82,Charoen Sirivadhanabhakdi,2013,11.7,68,M,Thailand,Food & Beverage
+86,Zong Qinghou,2013,11.6,67,M,China,Food & Beverage
+87,Dirce Navarro De Camargo,2013,11.5,,M,Brazil,Real Estate
+87,John Fredriksen,2013,11.5,68,M,Cyprus,Logistics
+89,Gerald Cavendish Grosvenor,2013,11.4,61,M,United Kingdom,Real Estate
+90,Harold Hamm,2013,11.3,67,M,United States of America,Energy
+91,Rupert Murdoch,2013,11.2,81,M,United States of America,Media & Entertainment
+91,John Paulson,2013,11.2,57,M,United States of America,Finance
+91,Azim Premji,2013,11.2,67,M,India,Technology
+94,Ernesto Bertarelli,2013,11,47,M,Switzerland,Healthcare
+94,Charlene de Carvalho-Heineken,2013,11,58,F,Netherlands,Food & Beverage
+94,Hans Rausing,2013,11,86,M,Sweden,Food & Beverage
+94,Jack Taylor,2013,11,90,M,United States of America,Automotive
+98,Lui Che Woo,2013,10.7,83,M,Hong Kong,Gambling & Casinos
+98,Laurene Powell Jobs,2013,10.7,49,F,United States of America,Technology
+100,Eike Batista,2013,10.6,56,M,Brazil,Mining
+100,Charles Ergen,2013,10.6,60,M,United States of America,Media & Entertainment
+100,Johanna Quandt,2013,10.6,86,F,Germany,Automotive
+1,Bill Gates,2014,76,58,M,United States of America,Technology
+2,Carlos Slim Helu,2014,72,74,M,Mexico,Telecom
+3,Amancio Ortega,2014,64,77,M,Spain,Fashion & Retail
+4,Warren Buffett,2014,58.2,83,M,United States of America,Finance
+5,Larry Ellison,2014,48,69,M,United States of America,Technology
+6,Charles Koch,2014,40,78,M,United States of America,Diversified
+6,David Koch,2014,40,73,M,United States of America,Diversified
+8,Sheldon Adelson,2014,38,80,M,United States of America,Gambling & Casinos
+9,Christy Walton,2014,36.7,59,F,United States of America,Fashion & Retail
+10,Jim Walton,2014,34.7,66,M,United States of America,Fashion & Retail
+11,Liliane Bettencourt,2014,34.5,91,F,France,Fashion & Retail
+12,Stefan Persson,2014,34.4,66,M,Sweden,Fashion & Retail
+13,Alice Walton,2014,34.3,64,F,United States of America,Fashion & Retail
+14,S. Robson Walton,2014,34.2,70,M,United States of America,Fashion & Retail
+15,Bernard Arnault,2014,33.5,64,M,France,Fashion & Retail
+16,Michael Bloomberg,2014,33,72,M,United States of America,Media & Entertainment
+17,Larry Page,2014,32.3,40,M,United States of America,Technology
+18,Jeff Bezos,2014,32,50,M,United States of America,Technology
+19,Sergey Brin,2014,31.8,40,M,United States of America,Technology
+20,Li Ka-shing,2014,31,85,M,Hong Kong,Diversified
+21,Mark Zuckerberg,2014,28.5,29,M,United States of America,Technology
+22,Michele Ferrero,2014,26.5,88,F,Italy,Food & Beverage
+23,Karl Albrecht,2014,25,94,M,Germany,Fashion & Retail
+23,Aliko Dangote,2014,25,56,M,Nigeria,Manufacturing
+25,Carl Icahn,2014,24.5,78,M,United States of America,Finance
+26,George Soros,2014,23,83,M,United States of America,Finance
+27,David Thomson,2014,22.6,56,M,Canada,Media & Entertainment
+28,Lui Che Woo,2014,22,84,M,Hong Kong,Gambling & Casinos
+29,Dieter Schwarz,2014,21.1,74,M,Germany,Fashion & Retail
+30,Prince Al-Waleed bin Talal Alsaud,2014,20.4,58,M,Saudi Arabia,Finance
+31,"Forrest Mars, Jr.",2014,20,82,M,United States of America,Food & Beverage
+31,Jacqueline Mars,2014,20,74,F,United States of America,Food & Beverage
+31,John Mars,2014,20,77,M,United States of America,Food & Beverage
+34,Jorge Paulo Lemann,2014,19.7,74,M,Brazil,Food & Beverage
+35,Lee Shau Kee,2014,19.6,86,M,Hong Kong,Diversified
+36,"Theo Albrecht, Jr.",2014,19.3,63,M,Germany,Fashion & Retail
+36,Steve Ballmer,2014,19.3,57,M,United States of America,Technology
+38,Leonardo Del Vecchio,2014,19.2,78,M,Italy,Fashion & Retail
+39,Len Blavatnik,2014,18.7,56,M,United States of America,Diversified
+40,Mukesh Ambani,2014,18.6,56,M,India,Energy
+40,Alisher Usmanov,2014,18.6,60,M,Russia,Mining
+42,Phil Knight,2014,18.4,76,M,United States of America,Fashion & Retail
+42,Michael Otto,2014,18.4,70,M,Germany,Real Estate
+42,Masayoshi Son,2014,18.4,56,M,Japan,Telecom
+45,Tadashi Yanai,2014,17.9,65,M,Japan,Fashion & Retail
+46,Gina Rinehart,2014,17.7,60,F,Australia,Mining
+47,Mikhail Fridman,2014,17.6,49,M,Russia,Energy
+48,Michael Dell,2014,17.5,49,M,United States of America,Technology
+49,Susanne Klatten,2014,17.4,51,F,Germany,Automotive
+50,Abigail Johnson,2014,17.3,52,F,United States of America,Finance
+51,Viktor Vekselberg,2014,17.2,56,M,Russia,Mining
+52,Lakshmi Mittal,2014,16.7,63,M,India,Mining
+53,Vladimir Lisin,2014,16.6,57,M,Russia,Mining
+54,Cheng Yu-tung,2014,16.2,88,M,Hong Kong,Diversified
+55,Joseph Safra,2014,16,75,M,Brazil,Finance
+56,Paul Allen,2014,15.9,61,M,United States of America,Technology
+57,Leonid Mikhelson,2014,15.6,58,M,Russia,Energy
+58,Anne Cox Chambers,2014,15.5,94,F,United States of America,Media & Entertainment
+58,Iris Fontbona,2014,15.5,71,F,Chile,Mining
+58,Francois Pinault,2014,15.5,77,M,France,Fashion & Retail
+61,Mohammed Al Amoudi,2014,15.3,67,M,Saudi Arabia,Energy
+61,Azim Premji,2014,15.3,68,M,India,Technology
+61,Gennady Timchenko,2014,15.3,61,M,Russia,Energy
+64,Wang Jianlin,2014,15.1,59,M,China,Real Estate
+65,Charles Ergen,2014,15,61,M,United States of America,Media & Entertainment
+66,Stefan Quandt,2014,14.9,47,M,Germany,Automotive
+67,German Larrea Mota Velasco,2014,14.7,60,M,Mexico,Mining
+68,Harold Hamm,2014,14.6,68,M,United States of America,Energy
+69,Donald Bren,2014,14.4,81,M,United States of America,Real Estate
+69,Ray Dalio,2014,14.4,64,M,United States of America,Finance
+71,Georg Schaeffler,2014,14.3,49,M,Germany,Manufacturing
+72,Luis Carlos Sarmiento,2014,14.2,81,M,Colombia,Finance
+73,Serge Dassault,2014,14,88,M,France,Diversified
+73,Ronald Perelman,2014,14,71,M,United States of America,Finance
+73,Laurene Powell Jobs,2014,14,50,F,United States of America,Technology
+76,Vagit Alekperov,2014,13.6,63,M,Russia,Energy
+76,John Fredriksen,2014,13.6,69,M,Cyprus,Logistics
+78,Rupert Murdoch,2014,13.5,82,M,United States of America,Media & Entertainment
+78,John Paulson,2014,13.5,58,M,United States of America,Finance
+80,Ma Huateng,2014,13.4,42,M,China,Media & Entertainment
+81,Gerald Cavendish Grosvenor,2014,13,62,M,United Kingdom,Real Estate
+82,Pallonji Mistry,2014,12.8,84,M,Ireland,Real Estate
+82,Johanna Quandt,2014,12.8,87,F,Germany,Automotive
+82,Dilip Shanghvi,2014,12.8,58,M,India,Healthcare
+82,Jack Taylor,2014,12.8,91,M,United States of America,Automotive
+86,Thomas & Raymond Kwok,2014,12.6,,M,Hong Kong,Real Estate
+86,Vladimir Potanin,2014,12.6,53,M,Russia,Mining
+88,Rinat Akhmetov,2014,12.5,47,M,Ukraine,Mining
+88,James Simons,2014,12.5,75,M,United States of America,Finance
+90,Alberto Bailleres Gonzalez,2014,12.4,82,M,Mexico,Mining
+91,Robin Li,2014,12.1,45,M,China,Technology
+92,Ernesto Bertarelli,2014,12,48,M,Switzerland,Healthcare
+92,Hans Rausing,2014,12,87,M,Sweden,Food & Beverage
+94,Zong Qinghou,2014,11.6,68,M,China,Food & Beverage
+95,Robert Kuok,2014,11.5,90,M,Malaysia,Diversified
+95,David & Simon Reuben,2014,11.5,71,M,United Kingdom,Real Estate
+97,Dhanin Chearavanont,2014,11.4,74,M,Thailand,Food & Beverage
+97,Andrey Melnichenko,2014,11.4,41,M,Russia,Energy
+97,Henry Sy,2014,11.4,89,M,Philippines,Diversified
+100,German Khan,2014,11.3,52,M,Russia,Energy
+100,Ananda Krishnan,2014,11.3,75,M,Malaysia,Telecom
+1,Bill Gates,2015,79.2,59,M,United States of America,Technology
+2,Carlos Slim Helu,2015,77.1,75,M,Mexico,Telecom
+3,Warren Buffett,2015,72.7,84,M,United States of America,Finance
+4,Amancio Ortega,2015,64.5,78,M,Spain,Fashion & Retail
+5,Larry Ellison,2015,54.3,70,M,United States of America,Technology
+6,Charles Koch,2015,42.9,79,M,United States of America,Diversified
+6,David Koch,2015,42.9,74,M,United States of America,Diversified
+8,Christy Walton,2015,41.7,60,F,United States of America,Fashion & Retail
+9,Jim Walton,2015,40.6,67,M,United States of America,Fashion & Retail
+10,Liliane Bettencourt,2015,40.1,92,F,France,Fashion & Retail
+11,Alice Walton,2015,39.4,65,F,United States of America,Fashion & Retail
+12,S. Robson Walton,2015,39.1,71,M,United States of America,Fashion & Retail
+13,Bernard Arnault,2015,37.2,66,M,France,Fashion & Retail
+14,Michael Bloomberg,2015,35.5,73,M,United States of America,Media & Entertainment
+15,Jeff Bezos,2015,34.8,51,M,United States of America,Technology
+16,Mark Zuckerberg,2015,33.4,30,M,United States of America,Technology
+17,Li Ka-shing,2015,33.3,86,M,Hong Kong,Diversified
+18,Sheldon Adelson,2015,31.4,81,M,United States of America,Gambling & Casinos
+19,Larry Page,2015,29.7,41,M,United States of America,Technology
+20,Sergey Brin,2015,29.2,41,M,United States of America,Technology
+21,Georg Schaeffler,2015,26.9,50,M,Germany,Manufacturing
+22,"Forrest Mars, Jr.",2015,26.6,83,M,United States of America,Food & Beverage
+22,Jacqueline Mars,2015,26.6,75,F,United States of America,Food & Beverage
+22,John Mars,2015,26.6,78,M,United States of America,Food & Beverage
+25,David Thomson,2015,25.5,57,M,Canada,Media & Entertainment
+26,Jorge Paulo Lemann,2015,25,75,M,Brazil,Food & Beverage
+27,Lee Shau Kee,2015,24.8,87,M,Hong Kong,Real Estate
+28,Stefan Persson,2015,24.5,67,M,Sweden,Fashion & Retail
+29,George Soros,2015,24.2,84,M,United States of America,Finance
+29,Wang Jianlin,2015,24.2,60,M,China,Real Estate
+31,Carl Icahn,2015,23.5,79,M,United States of America,Finance
+32,Maria Franca Fissolo,2015,23.4,97,F,Italy,Food & Beverage
+33,Jack Ma,2015,22.7,50,M,China,Technology
+34,Prince Alwaleed Bin Talal Alsaud,2015,22.6,59,M,Saudi Arabia,Finance
+35,Steve Ballmer,2015,21.5,58,M,United States of America,Technology
+35,Phil Knight,2015,21.5,77,M,United States of America,Fashion & Retail
+37,Karl Albrecht Jr.,2015,21.3,,M,Germany,Fashion & Retail
+38,Li Hejun,2015,21.1,47,M,China,Energy
+39,Mukesh Ambani,2015,21,57,M,India,Energy
+40,Leonardo Del Vecchio,2015,20.4,79,M,Italy,Fashion & Retail
+41,Len Blavatnik,2015,20.2,57,M,United States of America,Diversified
+41,Tadashi Yanai,2015,20.2,66,M,Japan,Fashion & Retail
+43,Charles Ergen,2015,20.1,62,M,United States of America,Media & Entertainment
+44,Dilip Shanghvi,2015,20,59,M,India,Healthcare
+45,Laurene Powell Jobs,2015,19.5,51,F,United States of America,Technology
+46,Dieter Schwarz,2015,19.4,75,M,Germany,Fashion & Retail
+47,Michael Dell,2015,19.2,50,M,United States of America,Technology
+48,Azim Premji,2015,19.1,69,M,India,Technology
+49,"Theo Albrecht, Jr.",2015,19,64,M,Germany,Fashion & Retail
+50,Michael Otto,2015,18.1,71,M,Germany,Real Estate
+51,Paul Allen,2015,17.5,62,M,United States of America,Technology
+52,Joseph Safra,2015,17.3,76,M,Brazil,Finance
+53,Anne Cox Chambers,2015,17,95,F,United States of America,Media & Entertainment
+54,Susanne Klatten,2015,16.8,52,F,Germany,Automotive
+55,Pallonji Mistry,2015,16.3,85,M,Ireland,Real Estate
+56,Ma Huateng,2015,16.1,43,M,China,Media & Entertainment
+57,Patrick Drahi,2015,16,51,M,France,Telecom
+58,Thomas & Raymond Kwok,2015,15.9,,M,Hong Kong,Real Estate
+59,Stefan Quandt,2015,15.6,48,M,Germany,Automotive
+60,Ray Dalio,2015,15.4,65,M,United States of America,Finance
+60,Vladimir Potanin,2015,15.4,54,M,Russia,Mining
+62,Serge Dassault,2015,15.3,89,M,France,Diversified
+62,Robin Li,2015,15.3,46,M,China,Technology
+64,Donald Bren,2015,15.2,82,M,United States of America,Real Estate
+65,Francois Pinault,2015,14.9,78,M,France,Fashion & Retail
+66,Shiv Nadar,2015,14.8,69,M,India,Technology
+67,Aliko Dangote,2015,14.7,57,M,Nigeria,Manufacturing
+68,Mikhail Fridman,2015,14.6,50,M,Russia,Energy
+69,Hinduja brothers,2015,14.5,,M,United Kingdom,Diversified
+69,Ronald Perelman,2015,14.5,72,M,United States of America,Finance
+71,Cheng Yu-tung,2015,14.4,89,M,Hong Kong,Diversified
+71,Alisher Usmanov,2015,14.4,61,M,Russia,Mining
+73,Henry Sy,2015,14.2,90,M,Philippines,Diversified
+73,Viktor Vekselberg,2015,14.2,57,M,Russia,Mining
+75,Masayoshi Son,2015,14.1,57,M,Japan,Telecom
+76,James Simons,2015,14,76,M,United States of America,Finance
+77,German Larrea Mota Velasco,2015,13.9,61,M,Mexico,Mining
+77,Rupert Murdoch,2015,13.9,83,M,United States of America,Media & Entertainment
+77,Johanna Quandt,2015,13.9,88,F,Germany,Automotive
+80,David & Simon Reuben,2015,13.7,72,M,United Kingdom,Real Estate
+81,Dhanin Chearavanont,2015,13.6,75,M,Thailand,Food & Beverage
+82,Iris Fontbona,2015,13.5,72,F,Chile,Mining
+82,Lui Che Woo,2015,13.5,85,M,Hong Kong,Gambling & Casinos
+82,Lakshmi Mittal,2015,13.5,64,M,India,Mining
+85,Abigail Johnson,2015,13.4,53,F,United States of America,Finance
+85,Luis Carlos Sarmiento,2015,13.4,82,M,Colombia,Finance
+87,Lei Jun,2015,13.2,45,M,China,Technology
+87,Charoen Sirivadhanabhakdi,2015,13.2,70,M,Thailand,Food & Beverage
+89,Alexey Mordashov,2015,13,49,M,Russia,Mining
+89,Marcel Herrmann Telles,2015,13,65,M,Brazil,Food & Beverage
+91,Gerald Cavendish Grosvenor,2015,12.6,63,M,United Kingdom,Real Estate
+92,Hans Rausing,2015,12.5,88,M,Sweden,Food & Beverage
+92,Jack Taylor,2015,12.5,92,M,United States of America,Automotive
+94,Charles Butt,2015,12.3,77,M,United States of America,Fashion & Retail
+94,Gina Rinehart,2015,12.3,61,F,Australia,Mining
+96,Vagit Alekperov,2015,12.2,64,M,Russia,Energy
+96,Harold Hamm,2015,12.2,69,M,United States of America,Energy
+96,Patrick Soon-Shiong,2015,12.2,63,M,United States of America,Healthcare
+99,Stefano Pessina,2015,12.1,73,M,Italy,Fashion & Retail
+100,Richard Kinder,2015,12,70,M,United States of America,Energy
+100,Elon Musk,2015,12,43,M,United States of America,Automotive
+100,Stephen Schwarzman,2015,12,68,M,United States of America,Finance

@@ -1,0 +1,398 @@
+---
+title: "Analysis of the World's Billionaires"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+library(tidyverse)
+library(lubridate)
+source("../scripts/viridis.R")
+```
+
+## Group 317B 
+
+## Members
+
+- Jack Cassady  
+- Ruhani Arora  
+- Levi Cameron  
+
+```{r read-data, include=FALSE}
+
+data <- read_csv("Billionaire_Data.csv") %>%
+  rename(Rank = No.)
+```
+
+## Introduction  
+
+In our project we will be looking at data of the 100 wealthiest people in the world from 2010 - 2015. There are a multitude of factors which we believe represent the individuals on this list, these include the Industry in which they have made the majority of their money, their age, their gender, and the country in which they reside. Analyzing each of these factors we can answer questions to provide further insight into each factor. With industries, we will be looking at which industries have generated the most wealth and which industries have had the highest amount of growth over this time period. This will give us information into which industries are the most popular for billionaires are well as which ones may be popular in the future. We plan on looking at how age affects the amount of wealth held by people in the list. We will be looking at the proportion of wealth held by each gender on the list as well as how this proportion has changed over time. Finally we plan on analyzing the countries that produce the highest average wealth as well as the most individuals on the list. Utilizing the data from Forbes, an analysis of factors such as Industry, Age, Gender, and Nationality indicate that for industry the best industries are Fashion & Retail or Technology, with Food & Beverage having the most promising growth, for age there is no affect on wealth, for gender most wealth is held by Men on this list however this proportion has decreased, and for nationality the best country for billionaires is the United States.    
+
+## Background  
+
+The data used to conduct our analysis was acquired from Forbes^[https://www.forbes.com/forbes-400/]. It lists the top 100 richest people in the world; in total there are 6 data sets that contain information about each person in the list from 2010 to 2015 that we have combined into one CSV file for simplicity. This information includes, Rank, Name, Net Worth, Age, and Nationality. In addition to these original categories, the data has been modified to include Gender and Industry.  
+
+The descriptions for each of these categories are listed below.  
+
+**Rank**: The rank column shows the rank of the person in the list of billionaires.
+It includes ties and assists in showing changes to the list year by year.  
+**Name**: Lists the name of the billionaire.  
+**Wealth**: Net worth shows the total estimated wealth for each person in the
+list for the year that the data was recorded. This data is listed in terms of US dollars
+and is in units of 1 billion.  
+**Age**: Age is the age of the person in the year that that the data was recorded if applicable.
+Some of the individuals on the list are listed in pairs or has combined wealth with family
+members so an age is not applicable in such a case.  
+**Gender**: This is the gender of the person on the list if applicable. Like with Age, the data
+contains pairs or families, if the pairs contained individuals of opposite gender
+the gender column was omitted.  
+**Nationality**: Lists the country from which the individual resides.  
+**Industry**: Industry is a more specific documentation of the source of wealth, categorizing each person into a specific industry or category of industry. There are 15 categories of industry utilized by Forbes, these are: Technology, Fashion & Retail, Finance, Telecom, Media & Entertainment, Energy, Real Estate, Gambling & Casinos, Food & Beverage, Automotive, Manufacturing, Mining, Healthcare, Logistics, and Diversified. Below is a description of each of these categories.  
+- **Technology**: Contains industries that focus on creating new technology or innovations. This category is primarily software and internet technology.  
+- **Fashion & Retail**: Contains high fashion and retail brands.  
+- **Finance**: Financial industries and investors.  
+- **Telecom**: Television and phone technology providers.  
+- **Media & Entertainment**: Traditional media such news providers combined with celebrities and the movie industry.  
+- **Energy**: Energy providers; this also includes oil companies and gas refinement.  
+- **Real Estate**: Real Estate developers and construction.  
+- **Gambling & Casinos**: Industries that offer gambling.  
+- **Food & Beverage**: Process and distribute food. This also includes packaging.  
+- **Automotive**: Producers of cars and trucks. While he could be considered a part of the technology industry, Elon Musk will be included here since his primary product is cars.  
+- **Manufacturing**: Assembles or manufactures goods to sell to consumers or retail brands.  
+- **Mining**: Large scale mining of ores such as gold, silver, or coal. This does not include oil drilling.  
+- **Healthcare**: Healthcare providers such as hospitals or pharmaceuticals.  
+- **Logistics**: Major shipping companies.  
+- **Diversified**: Any individual whose majority of wealth did not come from a sole industry.  
+
+```{r Background, echo=FALSE, message=FALSE}
+background <- data %>%
+  group_by(Name) %>%
+  summarise(
+    count = n()
+  ) %>%
+  arrange(desc(count))
+
+app_hist <- background %>%
+  group_by(count) %>%
+  summarise(
+    number = n()
+  ) %>%
+  ggplot(aes(count, number)) +
+  geom_bar(stat = "identity", fill = "firebrick") +
+  geom_text(aes(label = number), vjust=0) +
+  ggtitle("Number of Times a Billionaire Appears on the List") +
+  ylab("Number of Billionaires") +
+  xlab("Times on List") +
+  theme_minimal()
+app_hist
+```
+
+There are 162 unique people that make up the data as a whole. We can see based on the histogram above, 56 people have appeared on the list in all 6 of the years we collected data on. These are considered to be the wealthiest people in the world such as Bill Gates and Warren Buffett, generally making up the top half of the 100 richest people and having little variation in wealth. The second highest number of times on the list is 1 with 37 individuals, we can expect this category as well as possibly 2 times on the list to be the most variable since their net worth's are usually closer together meaning any amount gained or lost during the year could move them on or off the list easily. The middle number of times on the list are most likely to be those who have a higher amount of wealth than those who appear one or two times but may have passed away during collection of data or have made their wealth recently such as Elon Musk.  
+
+Pairing each of these categories of data with the wealth of their corresponding individuals we can develop an idea of how each of these factors plays a role into their wealth. While this is not a complete list of every factor that may contribute to an individual's wealth it should be able to give us the general idea to draw our conclusions upon. In our analysis we will be manipulating our data to generate graphs to provide a better picture of how these factors contribute. 
+
+
+## Analysis  
+
+In this section we will perform the numerical and graphical analysis to better understand the factors that contribute to wealth.
+
+### Which Industries Have Contributed the Most Wealth and Which Have the Best Growth?  
+We want to begin our analysis by looking at which industries these billionaires have acquired the most wealth in. This was done primarily by finding the total wealth of the individuals that belonged to each industry and observing this change over time. By looking at the total wealth generated by these industries we can find the best industry for gaining wealth, and looking at the growth of these industries, find which ones may be ideal in the future.
+
+```{r Industry 1, echo=FALSE, message=FALSE}
+tot_wealth = sum(data$Wealth)
+tot_avg_wealth = tot_wealth/5
+
+ind <- select(data, Year, Wealth, Industry) %>%
+  group_by(Industry, Year) %>%
+  summarise(
+    total_wealth = sum(Wealth),
+    avg_wealth = mean(Wealth),
+    number = n()
+  ) %>%
+  group_by(Industry) %>%
+  mutate(pct_change_tot = (total_wealth/lag(total_wealth) - 1) * 100, pct_change_avg = (avg_wealth/lag(avg_wealth) - 1) * 100)
+
+ind_analysis <- ind %>%
+  group_by(Industry) %>%
+  summarise(
+    avg_ind_wealth = mean(total_wealth)
+  )
+
+ggplot(ind, aes(fill = reorder(Industry, total_wealth), Year, total_wealth)) +
+  geom_col() +
+  ggtitle("Portion of Wealth Contributed by Each Industry") +
+  ylab("Total Wealth ($ Billion)") +
+  scale_fill_discrete(name = "Industry") +
+  theme_minimal()
+```
+
+The first graph evaluates both the total wealth of all individuals on the list each year as well as the proportion of that wealth by industry. The graph shows that the largest proportions of wealth in our data comes from Fashion & Retail which makes up on average, \$385.28 billion or 20.7% of average total wealth. This is followed closely by Technology and Finance which had averages of \$286.83 billion and \$206.75 billion with about 15.4% and 11.1% of average total wealth respectively. Nearly half of all wealth from the top 100 billionaires (47.2%) was generated by these three industries.  
+
+```{r Industry 2, echo=FALSE, message=FALSE}
+ind_wealth_avg <- ind %>%
+  group_by(Industry) %>%
+  summarise(
+    avg_wealth = mean(total_wealth)
+  ) %>%
+  arrange(desc(avg_wealth)) %>%
+  head(7)
+
+plot1 <- filter(ind, Industry %in% ind_wealth_avg$Industry) %>%
+  ggplot() +
+    geom_line(mapping = aes(x = Year, y = total_wealth, color = Industry)) +
+    ylim(0, 500) +
+    ggtitle("Total Wealth by Industry from 2010 - 2015", "Industries with total wealth in top half of industries") +
+    ylab("Total Wealth ($ Billion)") +
+    theme_minimal()
+plot1
+```
+
+We can look more into the industries that contribute the most wealth using the graph above that shows more clearly their wealth had grown over time. We are most interested in looking at the industries that contribute the highest amount of wealth so the graph is filtered to only include those industries who are in the top half of our industries analyzed in terms of total wealth contributed. From the graph we can see that along with being the two highest contributors to total wealth on the list, the Fashion & Retail and Technology industries have good positive growth over the time period as well. The reasons for this positive growth could be due to the reason that this is post-recession. While many of the other industries may suffer due to a lack of consumer spending, both retail and technology are somewhat immune to this. We see a small dip from 2010 to 2011 for Fashion & Retail that could be still from the recession but then it begins to climb as this industry is something that many people see as a necessary expense compared to other industries. Looking at technology this is a time when we are seeing the boom of social networks such as Facebook that don't require the consumer to spend money making them more inclined to use it. As a result these industries seem to have better growth during this time and may contiue to in the future. The combination of these two factors, wealth contributed and growth, leads us to believe that these two industries are ideal for creating wealth. One downside to this graph that one must consider is that is does not take into account people joining and leaving the list, we will try to look more into this later in this section.  
+
+
+```{r Industry 3, echo=FALSE, message=FALSE, fig.height=6, fig.width=10}
+ind_nums <- ind %>%
+  group_by(Industry) %>%
+  summarise(
+    avg_num = round(mean(number))
+  ) %>%
+  filter(avg_num >= 6)
+
+plot2_helper <- filter(ind, Industry %in% ind_nums$Industry) %>%
+  drop_na() %>%
+  group_by(Year) %>%
+  summarise(
+    avg_total_change = mean(pct_change_avg)
+  )
+
+plot2 <- filter(ind, Industry %in% ind_nums$Industry) %>%
+  drop_na() %>%
+  #mutate(Year = case_when(Year == 2011 ~ "2010-2011", 
+    #Year == 2012 ~ "2011-2012", 
+    #Year == 2013 ~ "2012-2013", 
+    #Year == 2014 ~ "2013-2014", 
+    #Year == 2015 ~ "2014-2015")) %>%
+  mutate(avg_total_change = case_when(Year == 2011 ~ plot2_helper$avg_total_change[1], 
+    Year == 2012 ~ plot2_helper$avg_total_change[2], 
+    Year == 2013 ~ plot2_helper$avg_total_change[3], 
+    Year == 2014 ~ plot2_helper$avg_total_change[4], 
+    Year == 2015 ~ plot2_helper$avg_total_change[5]))
+
+ggplot(plot2) +
+  geom_col(mapping = aes(x = Year, y = pct_change_avg, fill = Industry), position = "dodge") +
+  geom_line(mapping = aes(x = Year, y = avg_total_change), color = "red") +
+  facet_wrap(~Industry, ncol = 4) +
+  scale_x_continuous(breaks = c(2011, 2012, 2013, 2014, 2015), labels = c("2010-2011", "2011-2012", "2012-2013", "2013-2014", "2014-2015")) +
+  geom_hline(yintercept = 0, size = 0.2) +
+  ggtitle("Percent Change in Average Wealth by Industry from 2010-2015", "Industries with Average Number on the List Greater Than 6") +
+  ylab("Percent Change (%)") +
+  theme(axis.text.x = element_text(angle=60, hjust=1))
+```
+
+The industries that contribute high amounts of wealth now may not be the same in the future. For this reason we want to look at how the wealth of individuals in each industry has changed over time. We will do this by looking at the year to year percentage change of wealth for each industry. For this we will only be looking that industries with more than 6 people on the list on average since they are generally more robust to large changes in wealth due to people joining or leaving the list. These graphs are compared to the average percentage change among these industries which is depicted by the red line.  
+
+One interesting thing to note is that the collective of industries saw a large loss in growth both from 2011 to 2012 and 2014 to 2015. We are generally unsure of what caused these dips in growth as they are most likely not caused changes in who is on the list, however we believe that is due again to the post-recession economy, particularly in 2015 the world economy was seen as slow moving and vulnerable to economic shock.^[https://www.businessinsider.com/infographic-about-2015-global-economy-2016-1] This timid nature of the economy as a whole could be a contributing factor to the small dip seen at the end of the graph. However, looking at industries such as Food & Beverage, we see rather promising constant growth. Real Estate, while volatile, also saw fairly substantial growth. The rise in Real Estate we believe is due to the recovery from the 2008 recession, as well as a real estate boom in East Asian countries such as China. Beyond these we do see substantial growth from the Diversified, Fashion & Retail, Finanace, and Technology Industries. Again because of the combination of total wealth contribution and overall growth, the Fashion & Retail and Technology industries seem to be the best for wealth.  
+
+```{r Industry 4, echo=FALSE, message=FALSE, fig.height=6, fig.width=10}
+ggplot(ind) +
+  geom_col(aes(Year, number, fill = Industry)) +
+  facet_wrap(~Industry, ncol = 5)
+```
+
+In looking at the various industries it is important to understand how the number of people from each industry has changed over time. By far the most on the list is Fashion & Retail with Mining, Finance and Technology right behind it. Industries such as Diversified, Energy, Fashion & Retail, Food & Beverage, Manufacturing, Real Estate, and Telecom have generally had a consistent number of individuals on the list. However, looking at Automotive, Media & Entertainment, and Technology we can see a growth in the number of people on the list and it is beneficial to breakdown these changes. For automotive, while this industry has been rather slow in growth, new companies such as Tesla have become very popular recently for their electric vehicles. These new EV companies have had incredible growth over this time, especially with increased concern from the public about environmental health. In Media & Entertainment, this increase in the number of people on the list is likely due to a big increase in social media consumption that occurred during this time period. With Technology we have obviously seen the silicon valley boom with traditional companies such as Apple and Microsoft continuing to beat financial goals as well as again the boom in social media and gig work with companies such as Snapchat and Uber being launched during this time.
+
+Overall, the best industries based on our data tend to be Fashion & Retail and Technology that offer a large amount of wealth as well as positive growth over time. Technology also has the added benefit of a growth in people joining the top 100 from 2010 to 2015.
+
+### How Does Age Factor into Wealth?  
+
+Next we wanted to determine if the Age of the individual on the list was a contributing factor to their Net Worth. To do this we wanted to find if there was a correlation between these two variables as well as create a linear regression to give an idea of this relationship.  
+
+```{r Age, echo=FALSE, message=FALSE}
+# looking at age data from the year 2015 since it is most recent in data
+wealth_age <- select(data, Year, Wealth, Age) %>%
+  filter(Year == 2015) %>%
+  drop_na()
+
+age_summ <- wealth_age %>%
+  summarise(
+    count = n(),
+    tot_wealth = sum(Wealth),
+    avg_wealth = mean(Wealth),
+    avg_age = mean(Age),
+    age_sd = sd(Age)
+  )
+  
+est <- wealth_age %>%
+  summarise(
+    mx = mean(Age),
+    sx = sd(Age),
+    my = mean(Wealth),
+    sy = sd(Wealth),
+    corr = cor(Age, Wealth),
+    b1 = corr*sy/sx,
+    b0 = my - b1*mx
+  )
+
+# plot data with our regression line
+# regression line is: 0.07025051*x + 17.98359
+# correlation is 0.07223482
+ggplot(wealth_age, aes(x = Age, y = Wealth)) +
+  geom_point() + 
+  geom_smooth(se=FALSE, method="lm") +
+  ylab("Net Worth ($ Billion)") +
+  ggtitle("How Age Effects Net Worth", paste("Correlation = ", round(est$corr,4), "\nRegression Line = ", round(est$b1,4), "* Age + ",  round(est$b0, 4))) +
+  theme_minimal()
+```  
+
+Our plot above shows the data for each person on the list from the year 2015. We decided to use 2015 since it was the most recent data available. There are 99 unique individuals on this list with a total wealth of \$2.25 Trillion, this is due to some data points with no age data being dropped generally because it is either two people or a family that has shared wealth. The average age of these people is 67.53 and the average wealth held is \$22.73 Billion. Our linear regression shows a relatively flat line represented by the relationship $Net Worth = 0.0703*Age + 17.9836$. This small positive slope leads us to believe that there is little connection between the variables of age and wealth. This is confirmed by looking our correlation coefficient of the two variables which is 0.0722. This small correlation coefficient tells us that there is little to no connection between these two variables of Age and Wealth.  
+
+### Does Gender Affect Wealth?  
+
+Gender is another factor that can have a major role on the wealth of an individual on the list.
+
+```{r Gender 1, echo=FALSE, message=FALSE}
+gender <- select(data, Year, Wealth, Gender)
+
+gender_counts <- gender %>%
+  drop_na() %>%
+  group_by(Year, Gender) %>%
+  summarise(
+    counts = n()
+  )
+
+ggplot(gender_counts) +
+  geom_col(mapping = aes(x = Year, y = counts, fill = Gender), position = "dodge2") +
+  ggtitle("Number of Each Gender Represented", "By Year From 2010-2015") +
+  ylab("Number on List") +
+  theme_minimal()
+```  
+
+Based on the graph above we can see that there are by far more men represented on the list than women are. On average there are 89 men that make up the top 100 list while only 12 women were in the top 100 on average. While this disparity is very large, we do see and increase in the number of women on the list from 2010 to 2015. There were 9 women present on the list in 2010 which increased to 12 in 2015. This change is small but it is still a positive change.  
+
+```{r Gender 2, echo=FALSE, message=FALSE}
+
+gender_total <- gender %>%
+  drop_na() %>%
+  group_by(Year, Gender) %>%
+  summarise(
+    total_wealth = sum(Wealth)
+  )
+
+ggplot(gender_total) +
+  geom_col(mapping = aes(x = Year, y = total_wealth, fill = Gender), position = "dodge2") +
+  ggtitle("Total Wealth Held by Gender", "By Year From 2010-2015") +
+  ylab("Total Wealth ($ Billion)") +
+  theme_minimal()
+```  
+
+One of the main factors that we are looking to inspect when it comes to Gender is the total wealth held both men and women.We see that both the total wealth of men and women increased over our time frame. We also see again that there is a large disparity between the total amount of wealth held by each gender. On average from 2010 to 2015, men held about \$1.66 Trillion while women held only \$0.219 Trillion. It is very important to note that this disparity is largely in part to there being a lack of women on the list. We will look at the average net worth of both men and women in the next part of our analysis to see if this disparity changes.
+
+```{r Gender 3, echo=FALSE, message=FALSE}
+gender_avg <- gender %>%
+  drop_na() %>%
+  group_by(Year, Gender) %>%
+  summarise(
+    avg_wealth = mean(Wealth)
+  )
+
+ggplot(gender_avg) +
+  geom_col(mapping = aes(x = Year, y = avg_wealth, fill = Gender), position = "dodge2") +
+  ggtitle("Average Wealth Held by Gender", "By Year From 2010-2015") +
+  ylab("Average Wealth per Person ($ Billion)") +
+  theme_minimal()
+```  
+
+In looking at the average wealth held by both men and women is where we can begin to see that the disparity in total wealth is caused by the lack of women on the list rather than their total wealth since the average wealth of women appears to be fairly equal if not more than that of men. Particularly in 2015 is when we start to see the shift in average wealth. The total average wealth for individuals on the list was \$22.73 Billion. However, looking at the average for men we see that it sits just below the overall average at \$22.49 Billion while the average for women is above the overall average at \$23.13 Billion.  
+
+We can perform a two sample t-test on the average wealth of men and women to see if there is enough evidence to conclude that the average wealth of men is greater than that for women. For this t-test we will be using wealth data from 2010-2015 and separating these into categories by gender. Our null hypothesis is that the average wealth for men and women are equal while our alternative is that the average wealth for men is greater than it is for women. We will be using a signficance level 0.05 for the test.
+
+```{r Gender t-test, echo=FALSE, message=FALSE}
+female_avg <- gender %>%
+  filter(Gender == "F") %>%
+  pull(Wealth)
+
+male_avg <- gender %>%
+  filter(Gender == "M") %>%
+  pull(Wealth)
+
+t.test(male_avg, female_avg, alternative = "greater")
+```
+
+Since our t-test returned a p-value of 0.3847 which is greater than our significance level of 0.05, we cannot reject the null hypothesis and can generally conclude that the two averages are close enough to equal. This tells us that since the average wealth of both men and women are essentially equal, which gender holds the most wealth on the list will be determined by the number of each gender on the list. Since a vast majority of the list is made up of men we expect continue to see that men hold the majority of the total wealth. However, if the number of women on the list increases as it has in our data we may eventually see this change.  
+
+### Which Country is Best for Wealth?  
+
+```{r Nationality 1, echo=FALSE, message=FALSE, fig.width=8}
+nat <- select(data, Year, Wealth, Nationality)
+
+nat_analysis <- nat %>%
+  drop_na() %>%
+  group_by(Nationality, Year) %>%
+  summarise(
+    total_wealth = sum(Wealth)
+  )
+
+nat_analysis_2 <- nat_analysis %>%
+  group_by(Nationality) %>%
+  summarise(
+    average_wealth = mean(total_wealth)
+  ) %>%
+  mutate(pct_avg_wealth = average_wealth/sum(average_wealth))
+
+nat_count <- nat %>%
+  drop_na() %>%
+  group_by(Year, Nationality) %>%
+  summarise(
+    count = n()
+  )
+
+plot3 <- filter(nat_count, count > 2) %>%
+  ggplot() +
+    geom_col(mapping = aes(x = Nationality, y = count, fill = Nationality), position = "dodge2") +
+    facet_wrap(~Year) +
+    theme(axis.text.x = element_text(angle=60, hjust=1))
+plot3
+```  
+
+The plot above represents the number of individuals on the top 100 list each year and the countries in which they reside. From this plot we can see that the United States has the most billionaires by a significant margin. In 2015, the United States had 41 billionaires in the top 100 list, while the next closest country, Germany, had only 8. The United States is the only significant grower in billionaires over this 5 year period. This is likely because of the increase in technologies being created in the United States and Silicon Valley. Silicon valley is incredibly appealing for new innovators and billionaires alike, part being is because Silicon Valley is a large source of new technologies and the billionaires that fund them, likely contributing to the growing number of billionaires as well as an increase in profit for them. 
+```{r Nationality 3, echo=FALSE, message=FALSE, fig.height=6, fig.width=10}
+nat_tot <- nat %>%
+  drop_na() %>%
+  group_by(Year, Nationality) %>%
+  summarise(
+    total_wealth = sum(Wealth),
+    count = n()
+  ) %>%
+  filter(count > 1)
+
+ggplot(nat_tot) +
+  geom_line(mapping = aes(x = Year, y = total_wealth, color = Nationality))
+``` 
+
+The graph above shows the total wealth of all of the countries on the list in which there is greater than one person from that country. By far the highest amount of wealth contributed to the list comes from the United States with \$1.1 Trillion in 2015 which is \$951.4 Billion more than the next closest country. It is easy to tell from this graph that the United States has the highest growth among multiple billionaires. This is not a total surprise because the United States alone has approximately four times the amount of billionaires as other countries. It is interesting to see however how the United States continues to grow in wealth vs other nations. One possible correlation of this is the rise of technology and the importance it has in the U.S. market as well as growing billionaires in Silicon Valley.
+
+## Discussion
+
+We aim to find the factors contributing to the wealth in becoming billionaires. To find factors that contribute to the most wealth we split up the billionaire data to find the correlation between wealth and industry, age, gender, and nationality.
+
+#### Graphical Analysis
+
+The first factor we looked at is Industry.Based on our data analysis, we find that the industry contributing to nearly half of the wealth of thr billionaires is Fashion and retail. From our graphical analysis we can infer that over the year Fashion and retail industry has been exponentially growing and becoming a major source of wealth for billionaires. 
+The next factor we looked at was age. Since there was no correlation between age and wealth then this factor is not meaningful.
+The next factor we looked at was Gender. We split gender into three different plots to find correlation, the count of each gender, the total wealth, and the average wealth. We found the number of billionaires is predominantly male, because of this it makes sense that male total wealth is higher than female. Thus looking at the average is the best way to find correlation. Our average wealth for each gender is much more equal showing little correlation between wealth and gender.
+The USA has the most by a lot showing strong correlation between wealth and nationality. The second graph shows the total wealth gained by the billionaires and like the first the USA strongly dominates this one also. However, because the total amount of billionaires in the USA is much higher than anywhere else than this plot has little meaning.
+
+#### Shortcomings
+
+One of the shortcoming of the data can be repeated billionaires i.e people who were in the list before. So in order to understand what contributes in their growth of wealth it is a good idea to look at particular industries to make analysis of which Industry is the largest source of wealth
+Second shortcoming is as the list keeps on changing over the years and individuals move above and below the top-100 threshold, there are no factors to determine the reason for this fluctuation
+
+#### Summary of Primary Conclusion
+
+From our analysis we can say that Industry and Nationality  are the primary factors influencing the wealth of billionaires. At present Fashion and retail industry is the most growing industry providing a large amount of wealth and the USA has the highest number of billionaires showing a strong correlation between wealth and nationality
+
+
+
+
+## References
